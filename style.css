@@ -102,7 +102,7 @@ header {
     display: inside;
     justify-content: center;
     gap: 15px;
-    overflow-x: scroll;
+    overflow-x: hidden;
     margin-top: 20px;
     padding-bottom: 10px;
 }
