@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <!-- Menggunakan Google Fonts untuk Font yang lebih menarik -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>🎉 Selamat Ulang Tahun! 🎂</h1>
+            <p>Klik tombol di bawah untuk memulai perjalanan kenangan.</p>
+            <button id="enter-button">Masuk</button>
+        </div>
+    </div>
+
+    <!-- Halaman Utama -->
+    <div id="main-page" class="page hidden">
+        <header>
+            <h1>Selamat Ulang Tahun, my bub! ❤️</h1>
+            <p>this is our very very very long journey.</p>
+        </header>
+        <main>
+            <section id="gallery">
+                <h2>Galeri Foto</h2>
+                <div class="photo-gallery">
+                    <img src="gambar1.jpeg" alt="Kenangan 1">
+                    <img src="gambar2.jpeg" alt="Kenangan 2">
+                    <p>aku bahagia kamu menjadi bagian dari hidup aku </p>
+                    <img src="gambar3.jpeg" alt="Kenangan 3">
+                    <img src="gambar4.jpeg" alt="Kenangan 4">
+                    <img src="gambar5.jpeg" alt="Kenangan 5">
+                    <img src="gambar6.jpeg" alt="Kenangan 6">
+                    <img src="gambar7.jpeg" alt="Kenangan 7">
+                    <img src="gambar8.jpeg" alt="Kenangan 8">
+                </div>
+            </section>
+            <section id="video">
+                <h2>Video Perjalanan kita</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Browser kamu tidak mendukung video.
+                    </video>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Dengan cinta, dari aku untuk kamu ❤️</p>
+            <p>"Semoga aku bisa menjadi bagian dari setiap tahun yang akan hadir buat kamu" </p>
+            <!-- Pemutar Suara -->
+            <div id="audio-player">
+                <p>🎵 Pesan Buat Kamu❤️</p>
+                <audio controls>
+                    <source src="musik_kenangan.mp3" type="audio/mpeg">
+                    Browser kamu tidak mendukung pemutar suara.
+                </audio>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Pop-Up Dialog Pertama -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <p>Kamu sayang sama aku ga? 🥰</p>
+            <div class="popup-buttons">
+                <button id="button-yes1">Ya banget</button>
+                <button id="button-yes2">Iya bangeeettttt</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-Up Dialog Kedua -->
+    <div id="popup-second" class="popup hidden">
+        <div class="popup-content">
+            <p>Beneran hayoooo? 🤔</p>
+            <div class="popup-buttons">
+                <button id="button-yes3">Iya beneran!</button>
+                <button id="button-yes4">percaya deh! 😜</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
