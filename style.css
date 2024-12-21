@@ -67,7 +67,7 @@ button:hover {
 
 /* Halaman Utama */
 #main-page {
-    padding: 15px;
+    padding: 18px;
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
