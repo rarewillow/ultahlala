@@ -33,7 +33,7 @@ body {
     animation: slideIn 1.5s ease-in-out;
 }
 h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 600;
@@ -67,7 +67,7 @@ button:hover {
 
 /* Halaman Utama */
 #main-page {
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
