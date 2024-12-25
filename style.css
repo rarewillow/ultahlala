@@ -1,0 +1,314 @@
+/* Menggunakan Font dari Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #1e72d9, #508ffb);
+    color: #333;
+}
+
+/* Halaman Landing */
+#landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2a71b9, #68beff);
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+    background-attachment: fixed;
+}
+
+#landing-page.hidden {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+#landing-page .content {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1.5s ease-in-out;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #ff1493;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff1493;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Halaman Utama */
+#main-page {
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background: linear-gradient(180deg, #BCE0FF, #A2D2FF);
+}
+
+#main-page.hidden {
+    opacity: 0;
+}
+
+#main-page:not(.hidden) {
+    opacity: 1;
+}
+
+header {
+    background: #aa1b67;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Foto Galeri */
+#gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff1493;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.photo-gallery {
+    display: inside;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: scroll;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.photo-gallery img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #ff69b4;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Video */
+#video h2 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    color: #ff1493;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.video-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border: 4px solid #ff69b4;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Pop-Up */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    animation: scale-in 0.4s ease-out;
+}
+
+.popup p {
+    font-size: 2rem;
+    color: #ff1493;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.popup-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.popup button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: white;
+    background: #ff1493;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #ff69b4;
+    transform: scale(1.1);
+}
+
+.popup.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Pemutar Audio */
+#audio-player {
+    margin-top: 30px;
+    background: #ff69b4;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#audio-player audio {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    display: block;
+}
+
+.page.hidden {
+    display: none;
+}
+
+/* Modal Pop-up */
+#popup-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #f06292;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.popup-buttons button:hover {
+    background: #ec407a;
+}
+
+/* Tombol Tambahan */
+#extra-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#extra-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #64b5f6;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+#extra-buttons button:hover {
+    background: #42a5f5;
+}

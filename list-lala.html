@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apa aja sih yang aku suka dari lalaa?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #a2d5f2, #fcbad3);
+            color: #333;
+            animation: gradientAnimation 10s infinite alternate;
+            overflow-x: hidden;
+        }
+        @keyframes gradientAnimation {
+            0% { background: linear-gradient(to right, #a2d5f2, #fcbad3); }
+            50% { background: linear-gradient(to right, #fcbad3, #a2d5f2); }
+            100% { background: linear-gradient(to right, #a2d5f2, #fcbad3); }
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #6ec1e4;
+            color: white;
+            border-bottom: 5px solid #ffd1d1;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 1.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .content:hover {
+            transform: scale(1.02);
+        }
+        .content h2 {
+            text-align: center;
+            color: #ff6f61;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ffd1d1;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .content p {
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .moments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .moment {
+            border: 3px solid #ff6f61;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .moment:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .moment img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(50%);
+            transition: filter 0.3s;
+        }
+        .moment img:hover {
+            filter: grayscale(0%);
+        }
+        .moment p {
+            margin: 0;
+            padding: 15px;
+            background-color: #6ec1e4;
+            color: white;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            border-top: 5px solid #ffd1d1;
+            animation: fadeIn 1.5s ease 1s;
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apa aja sih yang aku suka dari lalaa?</h1>
+        <p>Terima kasih telah menjadi bagian terindah dalam hidupku.</p>
+    </header>
+    <div class="content">
+        <h2>Hal-Hal yang Aku Suka Dari Lala</h2>
+        <p>Kamu selalu tahu bagaimana membuatku bahagia, dari perhatian kecil hingga keberanianmu menghadapi tantangan. Aku suka caramu mendukungku tanpa syarat dan bagaimana kamu selalu membuatku merasa dicintai. Dari caramu berbicara yang membuat aku nyaman, wangimu... senyummu, aku tidak pernah merasa bisa menemukan perempuan seperti kamu lagi.</p>
+
+        <h2>Momen Berkesan untuk Aku</h2>
+        <div class="moments">
+            <div class="moment">
+                <img src="photo1.jpg" alt="Moment 1">
+                <p>Pertama kali aku merasakan suka sama kamu, dan setelah itu tanpa sadar hati aku selalu ingin lakuin semua keinginan kamu.</p>
+            </div>
+            <div class="moment">
+                <img src="photo2.jpg" alt="Moment 2">
+                <p>Ketemu kamu setelah lama enggak ketemu, dan disaat itu aku merasa harus menyatakan aku suka sama kamu, dan mulai coba untuk mendekati kamu.</p>
+            </div>
+            <div class="moment">
+                <img src="photo3.jpg" alt="Moment 3">
+                <p>Momen dimana sekilas lewat di bayangan aku membayangkan berbelanja sama kamu saat kita tua.</p>
+            </div>
+            <div class="moment">
+                <img src="photo4.jpg" alt="Moment 4">
+                <p>Disini kamu cantik banget, pencahayaan matahari bagus banget, disaat itu aku ngerasa aku jatuh cinta lagi sama kamu.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>"Aku mencintaimu lebih dari kata-kata bisa menggambarkan. Selamat ulang tahun!"</p>
+    </footer>
+</body>
+</html>

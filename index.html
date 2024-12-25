@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>🎉 Selamat Ulang Tahun Lala! 🎂</h1>
+            <p>Klik tombol di bawah ya buat kamu (づ> v >)づ♡</p>
+            <button id="enter-button">Lets go!!</button>
+        </div>
+    </div>
+
+    <!-- Halaman Utama -->
+    <div id="main-page" class="page hidden">
+        <header>
+            <h1>Selamat Ulang Tahun, my bub! ❤️</h1>
+            <p>this is our very very very long journey</p>
+        </header>
+        <main>
+            <section id="gallery">
+                <h2>Prettiest thing I've ever seen</h2>
+                <div class="photo-gallery">
+                    <img src="gambar1.jpeg" alt="Kenangan 1">
+                    <img src="gambar2.jpeg" alt="Kenangan 2">
+                    <p>"Aku bahagia kamu ada di hidup aku"</p>
+                    <img src="gambar3.jpeg" alt="Kenangan 3">
+                    <img src="gambar4.jpeg" alt="Kenangan 4">
+                    <p>“Semoga kamu sukses dunia dan akhirat, tetap jadi Lala baik yang aku kenal, dan semoga dari hari ke harinya Lala selalu bahagia”</p>
+                    <img src="gambar5.jpeg" alt="Kenangan 5">
+                    <img src="gambar6.jpeg" alt="Kenangan 6">
+                    <p>"Every time I meet you, I fall in love with you all over again."</p>
+                    <img src="gambar7.jpeg" alt="Kenangan 7">
+                    <img src="gambar8.jpeg" alt="Kenangan 8">
+                </div>
+            </section>
+            <section id="video">
+                <h2>Our Memory</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Browser kamu tidak mendukung video.
+                    </video>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Dengan cinta, dari aku untuk Lalaa ❤️</p>
+            <p>"Semoga aku bisa menjadi bagian dari setiap tahun buat kamu"</p>
+            <!-- Pemutar Suara -->
+            <div id="audio-player">
+                <p>🎵 Pesan Buat Kamu ❤️</p>
+                <audio controls>
+                    <source src="musik1.mp3" type="audio/mpeg">
+                    Browser kamu tidak mendukung pemutar suara.
+                </audio>
+            </div>
+            <!-- Tombol Tambahan -->
+            <div id="extra-buttons">
+                <button id="list-lala-button">Why Should i marry her</button>
+                <button id="cake-flowers-button">Kue dan Bunga</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal Pop-up -->
+    <div id="popup-modal" class="hidden">
+        <div class="modal-content">
+            <p>🎂 Aku punya kue dan bunga untuk kamu! 🌸</p>
+            <div class="popup-buttons">
+                <button id="yes-button">Iya</button>
+                <button id="later-button">Nanti</button>
+                <button id="no-button">Tidak</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
